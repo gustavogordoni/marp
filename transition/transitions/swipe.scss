@@ -1,0 +1,70 @@
+:root {
+  --bespoke-marp-transition-swipe-shadow: 6px 6px 10px 6px rgb(0 0 0 / 25%);
+}
+
+// [Safari CSS hack]
+// In Safari, applying shadow causes a rendering issue
+_::-webkit-full-page-media,
+_:future,
+:root {
+  --bespoke-marp-transition-swipe-shadow: none;
+}
+
+@keyframes marp-outgoing-transition-__builtin__swipe {
+  0% {
+    animation-timing-function: ease-in;
+    box-shadow: var(--bespoke-marp-transition-swipe-shadow);
+    transform: none;
+    transform-origin: 100% 100%;
+    z-index: 1;
+  }
+
+  100% {
+    box-shadow: var(--bespoke-marp-transition-swipe-shadow);
+    transform: translate(calc(-100vw - 30px), -30vh) rotate(-30deg);
+    transform-origin: 100% 100%;
+    z-index: 1;
+  }
+}
+
+@keyframes marp-incoming-transition-__builtin__swipe {
+  0% {
+    animation-timing-function: ease-in-out;
+    filter: brightness(0.5);
+    transform: scale(0.95);
+  }
+
+  100% {
+    filter: none;
+    transform: scale(1);
+  }
+}
+
+@keyframes marp-outgoing-transition-backward-__builtin__swipe {
+  0% {
+    transform: none;
+    animation-timing-function: ease-in-out;
+  }
+
+  100% {
+    filter: brightness(0.5);
+    transform: scale(0.95);
+  }
+}
+
+@keyframes marp-incoming-transition-backward-__builtin__swipe {
+  0% {
+    animation-timing-function: ease-out;
+    box-shadow: var(--bespoke-marp-transition-swipe-shadow);
+    transform: translate(calc(-100vw - 30px), 30vh) rotate(30deg);
+    transform-origin: 100% 0%;
+    z-index: 1;
+  }
+
+  100% {
+    box-shadow: var(--bespoke-marp-transition-swipe-shadow);
+    transform: none;
+    transform-origin: 100% 0%;
+    z-index: 1;
+  }
+}

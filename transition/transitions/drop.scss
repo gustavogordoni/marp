@@ -1,0 +1,77 @@
+:root {
+  --bespoke-marp-transition-drop-shadow:
+    0 0.3vh 0.6vh rgb(0 0 0 / 39%), rgb(0 0 0 / 30%) 0 3vh 5vh,
+    rgb(0 0 0 / 22%) 0 2vh 1.5vh;
+}
+
+// [Safari CSS hack]
+// In Safari, applying shadow causes a rendering issue
+_::-webkit-full-page-media,
+_:future,
+:root {
+  --bespoke-marp-transition-drop-shadow: none;
+}
+
+@keyframes marp-incoming-transition-__builtin__drop {
+  0% {
+    transform: translateY(-100%);
+    box-shadow: var(--bespoke-marp-transition-drop-shadow);
+  }
+
+  35% {
+    transform: none;
+    animation-timing-function: ease-out;
+  }
+
+  60% {
+    transform: translateY(-10%);
+    animation-timing-function: ease-in;
+  }
+
+  85% {
+    transform: none;
+    animation-timing-function: ease-out;
+  }
+
+  92.5% {
+    transform: translateY(-1%);
+    animation-timing-function: ease-in;
+    box-shadow: var(--bespoke-marp-transition-drop-shadow);
+  }
+}
+
+@keyframes marp-outgoing-transition-__builtin__drop {
+  35% {
+    filter: none;
+  }
+
+  100% {
+    filter: brightness(0.5);
+  }
+}
+
+@keyframes marp-incoming-transition-backward-__builtin__drop {
+  0% {
+    filter: brightness(0.5);
+    animation-timing-function: ease-in;
+  }
+
+  65% {
+    filter: none;
+  }
+}
+
+@keyframes marp-outgoing-transition-backward-__builtin__drop {
+  0% {
+    z-index: 1;
+    transform: translateY(0);
+    animation-timing-function: ease-in;
+    box-shadow: var(--bespoke-marp-transition-drop-shadow);
+  }
+
+  100% {
+    z-index: 1;
+    transform: translateY(-100%);
+    box-shadow: var(--bespoke-marp-transition-drop-shadow);
+  }
+}
