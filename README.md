@@ -33,6 +33,6 @@ Você pode navegar pelos temas e transições diretamente via **GitHub Pages**:
 ---
 
 ## Transições
-- [Todas Transições](https://gustavogordoni.github.io/marp/transition/all.html)  
+- [Todas Transições](https://gustavogordoni.github.io/marp/transition/demo.html)  
 - [Morphable](https://gustavogordoni.github.io/marp/transition/morphable.html)  
 - [One](https://gustavogordoni.github.io/marp/transition/one.html)
