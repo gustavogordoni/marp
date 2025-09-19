@@ -28,9 +28,12 @@ Você pode navegar pelos temas e transições diretamente via **GitHub Pages**:
 - [Embracket](https://gustavogordoni.github.io/marp/neobeam/example/neobeam-embracket.html)  
 - [Lund](https://gustavogordoni.github.io/marp/neobeam/example/neobeam-lund.html)  
 - [Neonbeam](https://gustavogordoni.github.io/marp/neobeam/example/neobeam-neonbeam.html)  
-- [Oldrnbeam](https://gustavogordoni.github.io/marp/neobeam/example/neobeam-oldenbeam.html)  
+- [Oldrnbeam](https://gustavogordoni.github.io/marp/neobeam/example/neobeam-oldenbeam.html)
 
----
+### Rose Pine Themes
+- [Rose Pine](https://gustavogordoni.github.io/marp/rose-pine/rose-pine.html)  
+- [Moon](https://gustavogordoni.github.io/marp/rose-pine/rose-pine-moon.html)  
+- [Dawn](https://gustavogordoni.github.io/marp/rose-pine/rose-pine-dawn.html)  
 
 ## Transições
 - [Todas Transições](https://gustavogordoni.github.io/marp/transition/demo.html)  
